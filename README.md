@@ -11,3 +11,15 @@ This project contains multiple components:
 -UI and Custom Tools: Apache License 2.0
 
 See each directory for details.
+bootloader
+kernel/        (GPLv2)
+initramfs
+rootfs/
+ ├── /bin
+ ├── /sbin
+ ├── /lib
+ ├── /usr
+ └── /etc
+ui/            (Apache-2.0)
+tools/         (Apache-2.0)
+docs/
