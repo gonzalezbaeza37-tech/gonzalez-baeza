@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es mx">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Omega OS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Barra superior -->
+  <header id="status-bar">
+    <span id="clock">12:00</span>
+    <span id="status">📶 🔋</span>
+  </header>
+
+  <!-- Área principal -->
+  <main id="app-grid">
+
+    <div class="app" onclick="openApp('apps/calculadora/index.html')">
+      <img src="icons/calc.png">
+      <span>Calculadora</span>
+    </div>
+
+    <div class="app" onclick="openApp('apps/notas/index.html')">
+      <img src="icons/notes.png">
+      <span>Notas</span>
+    </div>
+
+    <div class="app" onclick="openApp('apps/ajustes/index.html')">
+      <img src="icons/settings.png">
+      <span>Ajustes</span>
+    </div>
+
+  </main>
+
+  <script src="system.js"></script>
+</body>
+</html>
