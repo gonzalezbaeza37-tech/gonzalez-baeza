@@ -1,4 +1,12 @@
-
+java-html-os/
+│── index.html
+│── style.css
+│── app.js
+│── /apps
+│    ├── calculadora.html
+│    ├── notas.html
+│── Main.java
+│── README.md
 Estoy trabajando en un linux portatil llamado Mini Omega Os
 Copyrigth 2025 Jesús Benjamín González Baeza
 Licesed under the Apache License, Version 2.0 (the "license"), you may not use this file except in compliance with license.
