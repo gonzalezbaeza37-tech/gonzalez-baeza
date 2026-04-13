@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini Omega OS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="boot">
+    <h1>Bienvenido a JavaHTML OS</h1>
+    <button onclick="startOS()">Iniciar</button>
+</div>
+
+<div id="desktop" style="display:none;">
+    <h2>Escritorio</h2>
+
+    <div class="app" onclick="openApp('apps/calculadora.html')">
+        Calculadora
+    </div>
+
+    <div class="app" onclick="openApp('apps/notas.html')">
+        Notas
+    </div>
+
+    <iframe id="appFrame"></iframe>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
