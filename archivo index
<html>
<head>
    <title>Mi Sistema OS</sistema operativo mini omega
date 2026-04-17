@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+body {
+    margin: 0;
+    background: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+.app {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.icono {
+    background: #222;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+</style>
+</head>
+<body>
+
+<h2 style="text-align:center;">Mi Sistema</h2>
+
+<div class="app">
+    <div class="icono">📞 Llamadas</div>
+    <div class="icono">🧮 Calculadora</div>
+    <div class="icono">🌐 Navegador</div>
+</div>
+
+</body>
+</html>
