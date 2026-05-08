@@ -1,0 +1,42 @@
+import org.springframework.web.bind.annotation.*;
+import java.util.*;
+
+@RestController
+@RequestMapping("/kernel")
+public class KernelController {
+
+    static class Proceso {
+        public String nombre;
+        public int pid;
+
+        public Proceso(String nombre, int pid) {
+            this.nombre = nombre;
+            this.pid = pid;
+        }
+    }
+
+    private List<Proceso> procesos = new ArrayList<>();
+    private int contadorPID = 1;
+
+    @PostMapping("/crear")
+    public Proceso crear(@RequestParam String nombre) {
+        Proceso p = new Proceso(nombre, contadorPID++);
+        procesos.add(p);
+        return p;
+    }
+
+    @GetMapping("/listar")
+    public List<Proceso> listar() {
+        return procesos;
+    }
+
+    @GetMapping("/ejecutar")
+    public String ejecutar(@RequestParam int pid) {
+        for (Proceso p : procesos) {
+            if (p.pid == pid) {
+                return "Ejecutando " + p.nombre;
+            }
+        }
+        return "Proceso no encontrado";
+    }
+}
